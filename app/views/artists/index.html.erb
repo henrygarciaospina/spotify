@@ -1,1 +1,9 @@
-<h1>HOLA MUNDO</h1>
+       <table>
+         <% @artists.each do |artist| %>
+         <div class="thumbnail">
+         	<tr><td><%= image_tag(artist.image_url, size: "200x200") %></td></tr>
+            <tr align="center"><td><%= artist.name %></td></tr>
+         </div>
+           
+         <% end %>
+       </table>  
