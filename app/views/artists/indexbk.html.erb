@@ -1,0 +1,15 @@
+       <table>
+          <div class="container">
+          	 <div class="row">
+          	     <% @artists.each do |artist| %>
+         	   <div class="col-md-3">
+         	   	  <div class="thumbnail">
+         	        <tr><td class=""><%= image_tag(artist.image_url, size: "200x200") %></td></tr>
+                    <tr align="center"><td class="caption"><%= artist.name %></td></tr>
+                    <tr align="center"><td class=""><%= link_to "Ver más" , new_artist_path, class: "btn btn-primary btn-lg" %></td></tr>
+                  </div>
+         	   </div>
+            </div>
+          </div>  
+         <% end %>
+    </table>  

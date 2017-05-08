@@ -1,9 +1,14 @@
-       <table>
-         <% @artists.each do |artist| %>
-         <div class="thumbnail">
-         	<tr><td><%= image_tag(artist.image_url, size: "200x200") %></td></tr>
-            <tr align="center"><td><%= artist.name %></td></tr>
-         </div>
-           
-         <% end %>
-       </table>  
+<div class="container>
+	 <div class="row">
+	     <% @artists.each do |artist| %>
+	      <div class="col-md-3">
+	   	    <div class="image-responsive thumbnail" align="center">
+          <%= image_tag(artist.image_url, :class => "photo") %>
+          <%= artist.name %>
+          <br>
+          <%= link_to "Ver más" , new_artist_path, class: "btn btn-primary btn-lg" %>
+        </div>
+	      </div>
+      <% end %>
+  </div>
+</div>  
