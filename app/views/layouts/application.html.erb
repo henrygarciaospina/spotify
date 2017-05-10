@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Producthunt</title>
+    <title>RealMusic</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top nav navbar-inverse role="navigation">
       <div class="container">
         <div class="row">
           <div class="col-sm-10 col-sm-offset-1">
@@ -21,13 +21,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <%= link_to "Real Music",  class: "navbar-brand" %>
+              <p class="navbar-brand"> Real Music </p>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-
+               <li><a href="Artistas"></a></li>
+               <li><a href="Mi Música"></a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
          
@@ -36,18 +37,10 @@
                       <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                      <li></li>
+                      <li>Salir</li>
                     </ul>
                   </li>
-                  <li><%= link_to "<span class='glyphicon glyphicon-plus'></span>".html_safe, new_artist_path %></li>
-                  <li>Regístrate</li>
-                  <li>Login</li>
               </ul>
-              <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-              </form>
             </div><!-- /.navbar-collapse -->
           </div>
         </div>
