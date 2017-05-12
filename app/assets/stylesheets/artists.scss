@@ -2,6 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  border-style: solid;
+  margin: 10px 10px 10px 10px;
+  border-width: 0.5px;
+  border-color: #d7d7d7;
+  padding: 10px 10px;
+}
+
+nav.navbar {
+  background-color: #262626;
+}
+
+.panel-body  {
+  background-color: #f8f8f8;
+}
 
 h1 {
   margin-bottom: 50px;
@@ -13,8 +28,7 @@ h1 {
 }
 
 .album {
-   width: 150px;
-   height: 150px !important;
+   height: 170px !important;
 }
 
 .album_name {
@@ -29,4 +43,8 @@ h1 {
     margin-top: 0px;
     margin-bottom: 3px;
     a { font-weight: bold; }
+}
+
+.image-artist div{
+   float: right;
 }
