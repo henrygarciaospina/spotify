@@ -9,7 +9,6 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  artist_id   :integer
-#  song_id     :integer
 #
 
 class Album < ApplicationRecord
