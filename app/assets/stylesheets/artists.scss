@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+  background-color: #f8f8f8;
   border-style: solid;
   margin: 10px 10px 10px 10px;
   border-width: 0.5px;
@@ -47,4 +48,8 @@ h1 {
 
 .image-artist div{
    float: right;
+}
+
+.thumbnail{
+  background-color: #f8f8f8;
 }
